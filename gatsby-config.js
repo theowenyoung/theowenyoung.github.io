@@ -48,6 +48,21 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-theme-timeline`,
+      options: {
+        basePath: "/zh/",
+        jsonTransformerOptions: {
+          typeName: ({ node }) => {
+            const rootDirectoryName = node.relativeDirectory.split(`/`)[1]
+            const rootDirectoryNameCapitalized =
+              rootDirectoryName.charAt(0).toUpperCase() +
+              rootDirectoryName.slice(1)
+            return `${rootDirectoryNameCapitalized}Json`
+          },
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         policy: [{ userAgent: "*", disallow: ["/"] }],
