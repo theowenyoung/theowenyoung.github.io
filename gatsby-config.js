@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-
+const _ = require("lodash")
 module.exports = {
   /* Your site config here */
   siteMetadata: {
@@ -30,34 +30,35 @@ module.exports = {
         remote: `https://github.com/theowenyoung/story.git`,
         branch: `main`,
         // Only import the docs folder from a codebase.
-        patterns: ["content/**", "data/**"],
+        patterns: ["content/posts/**", "content/assets/**", "data/tweets/**"],
       },
     },
     {
-      resolve: `gatsby-theme-timeline`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        jsonTransformerOptions: {
-          typeName: ({ node }) => {
-            const rootDirectoryName = node.relativeDirectory.split(`/`)[1]
-            const rootDirectoryNameCapitalized =
-              rootDirectoryName.charAt(0).toUpperCase() +
-              rootDirectoryName.slice(1)
-            return `${rootDirectoryNameCapitalized}Json`
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1024,
+              linkImagesToOriginal: false,
+            },
           },
-        },
+          { resolve: `gatsby-remark-copy-linked-files` },
+          { resolve: `gatsby-remark-smartypants` },
+        ],
+        remarkPlugins: [require(`remark-slug`), require(`remark-emoji`)],
       },
     },
     {
       resolve: `gatsby-theme-timeline`,
       options: {
-        basePath: "/zh/",
+        mdxOtherwiseConfigured: true,
         jsonTransformerOptions: {
           typeName: ({ node }) => {
             const rootDirectoryName = node.relativeDirectory.split(`/`)[1]
-            const rootDirectoryNameCapitalized =
-              rootDirectoryName.charAt(0).toUpperCase() +
-              rootDirectoryName.slice(1)
-            return `${rootDirectoryNameCapitalized}Json`
+            return _.upperFirst(_.camelCase(`${rootDirectoryName} Json`))
           },
         },
       },
