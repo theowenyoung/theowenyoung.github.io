@@ -20,17 +20,52 @@ module.exports = {
         name: "Github",
         url: "https://github.com/theowenyoung",
       },
+      {
+        name: "English Blog",
+        url: "/",
+      },
+      {
+        name: "中文博客",
+        url: "/zh",
+      },
+      {
+        name: "Source",
+        url: "https://github.com/theowenyoung/story",
+      },
+      {
+        name: "Site Source",
+        url: "https://github.com/theowenyoung/theowenyoung.github.io",
+      },
     ],
   },
   plugins: [
     {
       resolve: `@theowenyoung/gatsby-source-git`,
       options: {
-        name: `story`,
+        name: `content/posts`,
         remote: `https://github.com/theowenyoung/story.git`,
         branch: `main`,
         // Only import the docs folder from a codebase.
         patterns: ["content/posts/**", "content/assets/**", "data/tweets/**"],
+      },
+    },
+    {
+      resolve: `@theowenyoung/gatsby-source-git`,
+      options: {
+        name: `content/posts-zh`,
+        remote: `https://github.com/theowenyoung/story.git`,
+        branch: `main`,
+        // Only import the docs folder from a codebase.
+        patterns: ["content/posts-zh/**", "data/tweets-zh/**"],
+      },
+    },
+    {
+      resolve: `gatsby-transformer-json`,
+      options: {
+        typeName: ({ node }) => {
+          const rootDirectoryName = node.relativeDirectory.split(`/`)[1]
+          return _.upperFirst(_.camelCase(`${rootDirectoryName} Json`))
+        },
       },
     },
     {
@@ -55,10 +90,26 @@ module.exports = {
       resolve: `gatsby-theme-timeline`,
       options: {
         mdxOtherwiseConfigured: true,
-        jsonTransformerOptions: {
-          typeName: ({ node }) => {
-            const rootDirectoryName = node.relativeDirectory.split(`/`)[1]
-            return _.upperFirst(_.camelCase(`${rootDirectoryName} Json`))
+        shouldTransformJson: false,
+        contentPath: "content/posts",
+        postsFilter: {
+          tags: {
+            in: ["en"],
+          },
+        },
+      },
+    },
+    {
+      resolve: `gatsby-theme-timeline`,
+      options: {
+        basePath: "/zh",
+        contentPath: "content/posts-zh",
+        tweetTypeName: "TweetsZhJson",
+        mdxOtherwiseConfigured: true,
+        shouldTransformJson: false,
+        postsFilter: {
+          tags: {
+            in: ["zh"],
           },
         },
       },
