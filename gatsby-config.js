@@ -21,11 +21,11 @@ module.exports = {
         url: "https://github.com/theowenyoung",
       },
       {
-        name: "English Blog",
+        name: "English",
         url: "/",
       },
       {
-        name: "中文博客",
+        name: "中文",
         url: "/zh",
       },
       {
