@@ -7345,10 +7345,10 @@ gatsby-theme-blog-core@^2.0.2:
     gatsby-transformer-sharp "^2.5.11"
     remark-slug "^5.1.2"
 
-gatsby-theme-timeline@^0.1.34:
-  version "0.1.34"
-  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.34.tgz#274ef66ab171fd6594d2597ef29653d13a70a23a"
-  integrity sha512-5ZqWZGOmR903DTeSSfMIeO+5EBAi830LJ1WUCd8C1klFIYFB2O9xHu22PZ581sYrsMMr+Erg5Iuz10HFhXUyHg==
+gatsby-theme-timeline@^0.1.35:
+  version "0.1.35"
+  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.35.tgz#af3e510bc5211d9201fccbdc35e7fc62cd204f10"
+  integrity sha512-LWHsmB4gaGtZPf6poeQnP3bMsn8gvEDsDrSoKT9DsvagFAmzOODJtgQLcjFrWCB3Ku4m44MvBhd6HBITrxJ/5Q==
   dependencies:
     "@theme-ui/prism" "^0.4.0-rc.5"
     date-fns "^2.16.1"
