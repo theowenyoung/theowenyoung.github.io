@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Owen Young's Timeline`,
-    siteUrl: `https://theowenyoung.github.io`,
+    siteUrl: `https://blog.owenyoung.com`,
     author: "Owen Young",
     description: "All my stories are here",
     social: [
@@ -19,6 +19,14 @@ module.exports = {
       {
         name: "Github",
         url: "https://github.com/theowenyoung",
+      },
+      {
+        name: "RSS",
+        url: "/rss.xml",
+      },
+      {
+        name: "中文RSS",
+        url: "/zh/rss.xml",
       },
       {
         name: "English",
@@ -114,10 +122,165 @@ module.exports = {
         },
       },
     },
+    // {
+    //   resolve: "gatsby-plugin-robots-txt",
+    //   options: {
+    //     policy: [{ userAgent: "*", disallow: ["/"] }],
+    //   },
+    // },
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: `gatsby-plugin-feed`,
       options: {
-        policy: [{ userAgent: "*", disallow: ["/"] }],
+        feeds: [
+          {
+            serialize: ({ query: { site, allBlogPost } }) => {
+              return allBlogPost.nodes
+                .filter(node => {
+                  let locale = "en"
+                  if (node.__typename === "MdxBlogPost") {
+                    locale =
+                      node.parent.parent.sourceInstanceName ===
+                      "content/posts-zh"
+                        ? "zh"
+                        : "en"
+                  } else if (node.__typename === "TweetPost") {
+                    locale =
+                      node.parent.__typename === "TweetsZhJson" ? "zh" : "en"
+                  }
+                  return locale === "en"
+                })
+                .map(node => {
+                  let html = node.body
+                  if (node.__typename === "MdxBlogPost") {
+                    html = node.parent.html
+                  }
+                  return Object.assign(
+                    {},
+                    {
+                      title: node.title,
+                      description: node.excerpt,
+                      date: node.dateISO,
+                      url: site.siteMetadata.siteUrl + node.slug,
+                      guid: site.siteMetadata.siteUrl + node.slug,
+                      custom_elements: [{ "content:encoded": html }],
+                    }
+                  )
+                })
+            },
+            query: `
+            {
+              allBlogPost(limit: 25, sort: {fields: [date, slug], order: DESC}) {
+                nodes {
+                  id
+                  __typename
+                  excerpt
+                  slug
+                  title
+                  body
+                  dateISO: date
+                  ... on MdxBlogPost {
+                    id
+                    parent {
+                      ... on Mdx {
+                        id
+                        html
+                        parent {
+                          ... on File {
+                            id
+                            name
+                            sourceInstanceName
+                          }
+                        }
+                      }
+                    }
+                  }
+                  ... on TweetPost {
+                    id
+                    parent {
+                      __typename
+                    }
+                  }
+                }
+              }
+            }
+            `,
+            output: "/rss.xml",
+          },
+          {
+            serialize: ({ query: { site, allBlogPost } }) => {
+              return allBlogPost.nodes
+                .filter(node => {
+                  let locale = "en"
+                  if (node.__typename === "MdxBlogPost") {
+                    locale =
+                      node.parent.parent.sourceInstanceName ===
+                      "content/posts-zh"
+                        ? "zh"
+                        : "en"
+                  } else if (node.__typename === "TweetPost") {
+                    locale =
+                      node.parent.__typename === "TweetsZhJson" ? "zh" : "en"
+                  }
+                  return locale === "zh"
+                })
+                .map(node => {
+                  let html = node.body
+                  if (node.__typename === "MdxBlogPost") {
+                    html = node.parent.html
+                  }
+                  return Object.assign(
+                    {},
+                    {
+                      title: node.title,
+                      description: node.excerpt,
+                      date: node.dateISO,
+                      url: site.siteMetadata.siteUrl + node.slug,
+                      guid: site.siteMetadata.siteUrl + node.slug,
+                      custom_elements: [{ "content:encoded": html }],
+                    }
+                  )
+                })
+            },
+            query: `
+            {
+              allBlogPost(limit: 25, sort: {fields: [date, slug], order: DESC}) {
+                nodes {
+                  id
+                  __typename
+                  excerpt
+                  slug
+                  title
+                  body
+                  dateISO: date
+                  ... on MdxBlogPost {
+                    id
+                    parent {
+                      ... on Mdx {
+                        id
+                        html
+                        parent {
+                          ... on File {
+                            id
+                            name
+                            sourceInstanceName
+                          }
+                        }
+                      }
+                    }
+                  }
+                  ... on TweetPost {
+                    id
+                    parent {
+                      __typename
+                    }
+                  }
+                }
+              }
+            }
+            `,
+            output: "/zh/rss.xml",
+          },
+        ],
       },
     },
   ],

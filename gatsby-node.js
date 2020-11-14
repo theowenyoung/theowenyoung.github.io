@@ -54,3 +54,8 @@ exports.createResolvers = ({ createResolvers }) => {
   }
   createResolvers(resolvers)
 }
+
+exports.onCreateNode = async (
+  { node, actions, createNodeId, getNode, store, cache },
+  themeOptions
+) => {}
