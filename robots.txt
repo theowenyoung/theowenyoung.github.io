@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /
-Sitemap: https://theowenyoung.github.io/sitemap.xml
-Host: https://theowenyoung.github.io
