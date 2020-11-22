@@ -95,6 +95,10 @@ module.exports = {
         mdxOtherwiseConfigured: true,
         shouldTransformJson: false,
         tweetTypeName: ["EnTweetsJson", "ZhTweetsJson"],
+        utterances: {
+          repo: "theowenyoung/story",
+          label: "comment",
+        },
       },
     },
     // {

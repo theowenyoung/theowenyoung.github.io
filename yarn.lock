@@ -5418,6 +5418,11 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
+disqus-react@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.npmjs.org/disqus-react/-/disqus-react-1.0.10.tgz#75f1553856157d08fa76d8339d53d783ec1e4a62"
+  integrity sha512-TFd+pSl9m9QpqGcNAmewH/V795I9ObJMcEbLCIyPBy1VvUUl8DUoP+OiWhx24UjRygfV8y6saZVTBJRNYGJvkQ==
+
 dns-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/dns-equal/-/dns-equal-1.0.0.tgz#b39e7f1da6eb0a75ba9c17324b34753c47e0654d"
@@ -7373,13 +7378,14 @@ gatsby-theme-i18n@^1.0.4:
     gatsby-plugin-react-helmet "^3.3.10"
     react-helmet "^6.1.0"
 
-gatsby-theme-timeline@^0.1.42:
-  version "0.1.42"
-  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.42.tgz#460e9bd750e160df5d9a114b0e8fb99fd6a78f38"
-  integrity sha512-+VykUNxnLtEbWZAyxkwJ5X7l9hu9ECEN1VpLVK5JNkfZ2cOfM50Y6MO+3zth3JX1QoWTLGR1WbUXP69HvsS3fQ==
+gatsby-theme-timeline@^0.1.52:
+  version "0.1.52"
+  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.1.52.tgz#2ee2c7ae19087f32b40bdbde0d512a202994c46a"
+  integrity sha512-oY7YUOWc/iUv08KwI0rQfSIf+XVByl5USP846Za05ebG3Okgtw/uSI1NqDnxtfR97raOk+zi9xhTxuzSyRWn0g==
   dependencies:
     "@theme-ui/prism" "^0.4.0-rc.5"
     date-fns "^2.16.1"
+    disqus-react "^1.0.10"
     gatsby-image "^2.4.13"
     gatsby-plugin-emotion "^4.3.10"
     gatsby-plugin-react-helmet "^3.3.10"
