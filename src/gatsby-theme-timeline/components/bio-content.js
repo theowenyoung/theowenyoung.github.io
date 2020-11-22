@@ -9,7 +9,8 @@ const BioContent = () => (
   <Fragment>
     Words by <Link href="/">Owen Young</Link>.
     <br />
-    Freelancer / Perfectionism / Workflow lover / <Link href="/zh">中文</Link>
+    Freelancer / Perfectionism / Workflow lover /{" "}
+    <Link href="/en">English</Link> /<Link href="/zh">中文</Link>
   </Fragment>
 )
 
