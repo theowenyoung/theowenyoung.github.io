@@ -108,6 +108,18 @@ module.exports = {
     //   },
     // },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Owen Young's Story`,
+        short_name: `Owen`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#FF4500`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         feeds: ["", "en", "zh"].map(locale => {
