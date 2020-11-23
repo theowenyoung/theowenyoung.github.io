@@ -86,7 +86,11 @@ module.exports = {
           { resolve: `gatsby-remark-copy-linked-files` },
           { resolve: `gatsby-remark-smartypants` },
         ],
-        remarkPlugins: [require(`remark-slug`), require(`remark-emoji`)],
+        remarkPlugins: [
+          require(`remark-slug`),
+          require(`remark-emoji`),
+          require(`remark-toc`),
+        ],
       },
     },
     {
