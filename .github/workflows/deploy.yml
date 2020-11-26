@@ -4,20 +4,14 @@ on:
   workflow_dispatch:
   repository_dispatch:
     types: [redeploy]
-env:
-  BLOGA_CLIENT_ID: ${{ secrets.BLOGA_CLIENT_ID }}
-  BLOGA_CLIENT_SECRET: ${{ secrets.BLOGA_CLIENT_SECRET }}
-  BLOGA_SITE_CONFIG_URL: ${{ secrets.BLOGA_SITE_CONFIG_URL }}
-  SSH_DEPLOY_KEY: ${{secrets.SSH_DEPLOY_KEY }}
-  UPGRADE_BRANCH: bloga-automated-upgrade
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Build
     steps:
-      - name: trigger vercel deploy
-        if: github.event_name=='repository_dispatch' || github.event_name=='workflow_dispatch'
-        run: curl ${{ secrets.VERCEL_HOOK }}
+      # - name: trigger vercel deploy
+      #   if: github.event_name=='repository_dispatch' || github.event_name=='workflow_dispatch'
+      #   run: curl ${{ secrets.VERCEL_HOOK }}
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name: Get yarn cache directory
@@ -34,6 +28,13 @@ jobs:
         run: "yarn --pure-lockfile"
       - name: Build
         run: yarn build
+      - name: Deploy to surge
+        uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: "blog.owenyoung.com"
+          project: "./public"
+          login: ${{ secrets.SURGE_LOGIN }}
+          token: ${{ secrets.SURGE_TOKEN }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
