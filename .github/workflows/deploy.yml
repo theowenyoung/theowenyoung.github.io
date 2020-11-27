@@ -28,13 +28,13 @@ jobs:
         run: "yarn --pure-lockfile"
       - name: Build
         run: yarn build
-      - name: Deploy to surge
-        uses: dswistowski/surge-sh-action@v1
-        with:
-          domain: "blog.owenyoung.com"
-          project: "./public"
-          login: ${{ secrets.SURGE_LOGIN }}
-          token: ${{ secrets.SURGE_TOKEN }}
+      # - name: Deploy to surge
+      #   uses: dswistowski/surge-sh-action@v1
+      #   with:
+      #     domain: "blog.owenyoung.com"
+      #     project: "./public"
+      #     login: ${{ secrets.SURGE_LOGIN }}
+      #     token: ${{ secrets.SURGE_TOKEN }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
