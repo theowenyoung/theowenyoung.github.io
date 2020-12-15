@@ -11,6 +11,17 @@ module.exports = {
     siteUrl: `https://blog.owenyoung.com`,
     author: "Owen Young",
     description: "All my stories are here",
+    keywords: ["Owen", "Owen Young", "Blog", "Story"],
+    menuLinks: [
+      {
+        name: "仅显示中文",
+        url: "/zh",
+      },
+      {
+        name: "Only English",
+        url: "/en",
+      },
+    ],
     social: [
       {
         name: "Github",
