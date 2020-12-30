@@ -115,6 +115,7 @@ exports.createPages = async ({ graphql, actions, reporter }, themeOptions) => {
               : urlResolve(`${basePath}`, `${locale}/page/${i + 1}`),
           component: ItemsTemplate,
           context: {
+            pageLang: locale,
             basePath,
             pageType: `home`,
             tagsFilter: postsFilter,
