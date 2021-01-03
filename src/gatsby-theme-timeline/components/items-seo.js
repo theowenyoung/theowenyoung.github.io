@@ -16,7 +16,6 @@ export default ({ pageContext, location, siteMetadata }) => {
   if (pageContext.pageLang) {
     lang = pageContext.pageLang
   }
-  console.log("lang", lang)
   if (lang === "zh") {
     title = "首页"
   }
