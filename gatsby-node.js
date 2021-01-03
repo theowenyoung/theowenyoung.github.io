@@ -33,7 +33,7 @@ exports.createResolvers = ({ createResolvers }) => {
         },
       },
     },
-    TweetPost: {
+    SocialMediaPost: {
       tags: {
         resolve: (source, _, context) => {
           const parentNode = context.nodeModel.getNodeById({
