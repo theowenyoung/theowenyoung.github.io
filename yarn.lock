@@ -7271,10 +7271,10 @@ gatsby-telemetry@^1.5.0:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-theme-blog-core@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-blog-core/-/gatsby-theme-blog-core-2.0.2.tgz#8d5d26e4217ead08983284485b84258898abec66"
-  integrity sha512-h14F6fdXLZMalivT7HmCCBbBIu0iS0oCxmvMPfWkJIb7wqllIram/FHhYNhcQYNzSPlDa09S2c5cAJUIQ/XG7w==
+gatsby-theme-blog-core@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npmjs.org/gatsby-theme-blog-core/-/gatsby-theme-blog-core-2.0.4.tgz#bc0a8fcfc40275a5b7f9fa790118ef4538ba273e"
+  integrity sha512-UyOZBRjm1Ab2Em/baHNInn6V+gd6qxuVWn9dMrPygvuIkXOwrli/QQ/9I2Vzlq/BXX0DiF5qpwLlswSLipJ9zA==
   dependencies:
     "@mdx-js/mdx" "^1.6.14"
     gatsby-core-utils "^1.3.13"
@@ -7295,10 +7295,10 @@ gatsby-theme-i18n@^1.0.4:
     gatsby-plugin-react-helmet "^3.3.10"
     react-helmet "^6.1.0"
 
-gatsby-theme-timeline@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.2.1.tgz#e450f8e4279ac9cce4330f1e76d61663f09afc02"
-  integrity sha512-bApB+Mkf8yDweNBeVw8Ej943VI9/YfLXZJeuX4xm4tSeyeUKKW/tl4LFPCgUSuuBqgq2vFLgnMUgdKmlHw1D1A==
+gatsby-theme-timeline@^0.2.12:
+  version "0.2.12"
+  resolved "https://registry.npmjs.org/gatsby-theme-timeline/-/gatsby-theme-timeline-0.2.12.tgz#da401a17515a8af873e831d70283d61241bc832d"
+  integrity sha512-dfRVDTw91CCa0vLCrgehaZhmJrrNMDUDbhdPiykfoNYq4T3MVE7+KrSdAl5Yx2Mp9wdMpRwpICmE97jRjMd9nQ==
   dependencies:
     "@theme-ui/prism" "^0.4.0-rc.5"
     date-fns "^2.16.1"
@@ -7310,7 +7310,7 @@ gatsby-theme-timeline@^0.2.1:
     gatsby-plugin-reddit "^0.1.0"
     gatsby-plugin-theme-ui "^0.4.0-rc.5"
     gatsby-plugin-twitter "^2.3.10"
-    gatsby-theme-blog-core "^2.0.2"
+    gatsby-theme-blog-core "^2.0.4"
     gatsby-theme-i18n "^1.0.4"
     gatsby-theme-ui-timeline-preset "^0.1.13"
     gatsby-transformer-json "^2.4.14"

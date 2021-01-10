@@ -194,7 +194,7 @@ module.exports = {
                       }
                     }
                   }
-                  ... on TweetPost {
+                  ... on SocialMediaPost {
                     id
                     parent {
                       __typename
