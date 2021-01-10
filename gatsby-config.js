@@ -12,6 +12,7 @@ module.exports = {
     author: "Owen Young",
     description: "All my stories are here",
     keywords: ["Owen", "Owen Young", "Blog", "Story"],
+    telegram: "@theowenyoung",
     menuLinks: [
       {
         name: "仅显示中文",
