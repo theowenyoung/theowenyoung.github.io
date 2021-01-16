@@ -213,5 +213,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-FS0E2RE694", // Google Analytics / GA
+        ],
+      },
+    },
   ],
 }
