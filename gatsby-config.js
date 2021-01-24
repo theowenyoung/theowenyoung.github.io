@@ -25,7 +25,7 @@ module.exports = {
     ],
     social: [
       {
-        name: "Github",
+        name: "Github @theowenyoung",
         url: "https://github.com/theowenyoung",
       },
       {
@@ -42,12 +42,16 @@ module.exports = {
         url: "/zh/rss.xml",
       },
       {
-        name: "Twitter",
+        name: "Twitter @TheOwenYoung",
         url: "https://twitter.com/TheOwenYoung",
       },
       {
-        name: "中文Twitter",
+        name: "中文Twitter @OwenYoung_zh",
         url: "https://twitter.com/OwenYoung_zh",
+      },
+      {
+        name: "Instagram @iamowenyoung",
+        url: "https://www.instagram.com/iamowenyoung/",
       },
       {
         name: "Source",
@@ -111,6 +115,7 @@ module.exports = {
         mdxOtherwiseConfigured: true,
         shouldTransformJson: false,
         tweetTypeName: ["EnTweetsJson", "ZhTweetsJson"],
+        instagramTypeName: ["EnInstagramJson", "ZhInstagramJson"],
         utterances: {
           repo: "theowenyoung/story",
           label: "comment",
