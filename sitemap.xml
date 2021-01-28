@@ -18,6 +18,7 @@
 <url> <loc>https://blog.owenyoung.com/tweet/1335893219154882566</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/tweet/1332922834511826947</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/tweet/1332823091915878403</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.owenyoung.com/en/posts/gatsby-timeline-theme/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/zh/posts/english-words-about-buildings/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/zh/posts/english-words-about-units/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/zh/posts/english-words-about-crime/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -70,8 +71,12 @@
 <url> <loc>https://blog.owenyoung.com/page/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/tags/actionsflow/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/tags/entwickler/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.owenyoung.com/tags/gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/tags/ifttt/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/tags/instagram/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.owenyoung.com/tags/product/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.owenyoung.com/tags/release/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://blog.owenyoung.com/tags/theme/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/tags/anki/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/tags/coronavirus/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://blog.owenyoung.com/tags/en/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
