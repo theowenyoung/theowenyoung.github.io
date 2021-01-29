@@ -23,6 +23,20 @@ module.exports = {
         url: "/en",
       },
     ],
+    categories: [
+      {
+        name: "Post",
+        url: "/tags/post",
+      },
+      {
+        name: "Tweet",
+        url: "/tags/tweet",
+      },
+      {
+        name: "Instagram",
+        url: "/tags/instagram",
+      },
+    ],
     social: [
       {
         name: "Github @theowenyoung",
