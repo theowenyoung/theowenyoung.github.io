@@ -115,6 +115,15 @@ module.exports = {
           },
           { resolve: `gatsby-remark-copy-linked-files` },
           { resolve: `gatsby-remark-smartypants` },
+          {
+            resolve: "gatsby-remark-mermaid",
+            options: {
+              viewport: {
+                width: 768,
+                height: 800,
+              },
+            },
+          },
         ],
         remarkPlugins: [
           require(`remark-slug`),
@@ -136,12 +145,6 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-robots-txt",
-    //   options: {
-    //     policy: [{ userAgent: "*", disallow: ["/"] }],
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
