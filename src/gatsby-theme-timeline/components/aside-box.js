@@ -13,8 +13,8 @@ const Aside = ({ data, pageContext }) => {
   } = data
   const { social } = siteMetadata
   return (
-    <Styled.div data-test="aside" as="aside" sx={{ height: `full` }}>
-      <Styled.div sx={{ top: 4, position: `sticky` }}>
+    <Styled.div data-test="aside" as="aside">
+      <Styled.div>
         <Bio basePath={basePath}></Bio>
         <Tags basePath={basePath} group={group}></Tags>
         <Categories basePath={basePath}></Categories>
