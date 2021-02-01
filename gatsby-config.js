@@ -39,8 +39,33 @@ module.exports = {
     ],
     social: [
       {
+        name: "About",
+        url: "/about",
+      },
+      {
+        name: "Now",
+        url: "/now",
+      },
+      {
+        name: "Projects",
+        url: "/projects",
+      },
+      {
         name: "Github @theowenyoung",
         url: "https://github.com/theowenyoung",
+      },
+
+      {
+        name: "Twitter @TheOwenYoung",
+        url: "https://twitter.com/TheOwenYoung",
+      },
+      {
+        name: "中文Twitter @OwenYoung_zh",
+        url: "https://twitter.com/OwenYoung_zh",
+      },
+      {
+        name: "Instagram @iamowenyoung",
+        url: "https://www.instagram.com/iamowenyoung/",
       },
       {
         name: "RSS",
@@ -56,18 +81,6 @@ module.exports = {
         url: "/zh/rss.xml",
       },
       {
-        name: "Twitter @TheOwenYoung",
-        url: "https://twitter.com/TheOwenYoung",
-      },
-      {
-        name: "中文Twitter @OwenYoung_zh",
-        url: "https://twitter.com/OwenYoung_zh",
-      },
-      {
-        name: "Instagram @iamowenyoung",
-        url: "https://www.instagram.com/iamowenyoung/",
-      },
-      {
         name: "Source",
         url: "https://github.com/theowenyoung/story",
       },
@@ -78,6 +91,14 @@ module.exports = {
     ],
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content/pages`,
+        path: `${__dirname}/content/pages/`,
+      },
+    },
+
     {
       resolve: `@theowenyoung/gatsby-source-git`,
       options: {

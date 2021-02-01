@@ -17,6 +17,7 @@ const Categories = () => {
     `
   )
   const links = site.siteMetadata.categories
+
   return (
     <Box data-test="categories-container">
       <Styled.h4 data-test="categories-title">Categories</Styled.h4>
