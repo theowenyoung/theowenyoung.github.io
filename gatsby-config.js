@@ -23,6 +23,25 @@ module.exports = {
         url: "/en",
       },
     ],
+    projects: [
+      {
+        name: "Actionsflow",
+        url: "https://github.com/actionsflow/actionsflow",
+        description:
+          "free IFTTT/Zapier alternative for developers based on Github Actions",
+      },
+      {
+        name: "Buzzing",
+        url: "https://www.buzzing.cc/",
+        description: "See hot discussions in your native language",
+      },
+      {
+        name: "Gatsby Theme Timeline",
+        url: "https://github.com/theowenyoung/gatsby-theme-timeline",
+        description:
+          "show your all posts, tweets, instagram posts etc into one blog",
+      },
+    ],
     categories: [
       {
         name: "Post",

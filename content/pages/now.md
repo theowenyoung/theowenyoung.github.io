@@ -3,7 +3,7 @@ title: What I’m doing now?
 date: 2021-02-01
 ---
 
-> This is a [now](https://nownownow.com/about) page, read more about me at [/about](/about) page.
+> This is a [now](https://nownownow.com/about) page, read more about me at [/about](/about) page or [/projects](/projects) page.
 
 - **Maintaining [Actionsflow](https://github.com/actionsflow/actionsflow)**
 

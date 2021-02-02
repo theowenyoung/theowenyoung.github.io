@@ -1,14 +1,15 @@
 /** @jsx jsx */
 import { Box, jsx, Styled, Link as LinkUI } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
-const Categories = () => {
+const Projects = () => {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            categories {
+            projects {
               name
+              description
               url
             }
           }
@@ -16,11 +17,12 @@ const Categories = () => {
       }
     `
   )
-  const links = site.siteMetadata.categories
-
+  const links = site.siteMetadata.projects
   return (
-    <Box data-test="categories-container">
-      <Styled.h4 data-test="categories-title">Categories</Styled.h4>
+    <Box data-test="projects-container">
+      <LinkUI href={"/projects"} sx={{ color: "text" }}>
+        <Styled.h4 data-test="projects-title">Projects</Styled.h4>
+      </LinkUI>
       <Styled.ul>
         {links
           ? links.map((link, i) => {
@@ -30,10 +32,13 @@ const Categories = () => {
                 attr.rel = `noopener noreferrer`
               }
               return (
-                <li key={`categories-${i}`}>
+                <li key={`projects-${i}`} sx={{ mb: 2 }}>
                   <LinkUI {...attr} href={link.url}>
                     {link.name}
                   </LinkUI>
+                  <div sx={{ fontSize: 0, color: "textMuted" }}>
+                    {link.description}
+                  </div>
                 </li>
               )
             })
@@ -43,4 +48,4 @@ const Categories = () => {
   )
 }
 
-export default Categories
+export default Projects
