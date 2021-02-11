@@ -3,7 +3,7 @@ title: About Me
 date: 2021-02-01
 ---
 
-Programmer, Freelancer, workflow lover.
+Programmer, Freelancer, Workflow lover, Personal Finance Enthusiast
 
 - **A failure of English learning**
 
