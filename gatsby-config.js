@@ -83,6 +83,10 @@ module.exports = {
         url: "https://twitter.com/OwenYoung_zh",
       },
       {
+        name: "Telegram @theowenyoung",
+        url: "https://t.me/theowenyoung",
+      },
+      {
         name: "Instagram @iamowenyoung",
         url: "https://www.instagram.com/iamowenyoung/",
       },

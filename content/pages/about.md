@@ -18,6 +18,7 @@ Programmer, Freelancer, workflow lover.
   - Twitter [@TheOwenYoung](https://twitter.com/TheOwenYoung)
   - Twitter for Chinese [@owenyoung_zh](https://twitter.com/owenyoung_zh)
   - Github [@theowenyoung](https://github.com/theowenyoung)
+  - Telegram [@theowenyoung](https://t.me/theowenyoung)
   - Instagram [@iamowenyoung](https://www.instagram.com/iamowenyoung/)
   - Patreon [@theowenyoung](https://www.patreon.com/theowenyoung)
 
