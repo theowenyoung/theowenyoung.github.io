@@ -24,3 +24,9 @@ date: 2021-02-01
 - **Practicing English**
 
   I'm a failure of English learning. I've learned English more than 10 years, but it still sucks, so I registered a Twitter [@TheOwenYoung](https://twitter.com/TheOwenYoung) for only English tweets, and this [blog](https://blog.owenyoung.com) to force me to use more English. It's Feb, 01, 2021 today when I writing this, I hope this is my last goal after making so many goals. Once I reach my goal, I'll update here.
+
+- **Goal**
+
+  - [ ] Post 100 articles this year
+  - [ ] More patient about stocks.
+  - [ ] Significantly improve English level
