@@ -1,7 +1,7 @@
 import React from "react"
-import SEO from "gatsby-theme-timeline/src/components/seo"
+import Seo from "gatsby-theme-timeline/src/components/seo"
 
-export default ({ pageContext, location, siteMetadata }) => {
+const ItemsSeo = ({ pageContext, location, siteMetadata }) => {
   const { pageType, tag } = pageContext
   let lang = "en"
   let title = `Home`
@@ -20,7 +20,7 @@ export default ({ pageContext, location, siteMetadata }) => {
     title = "首页"
   }
   return (
-    <SEO
+    <Seo
       siteMetadata={siteMetadata}
       lang={lang}
       description={description}
@@ -30,3 +30,4 @@ export default ({ pageContext, location, siteMetadata }) => {
     />
   )
 }
+export default ItemsSeo

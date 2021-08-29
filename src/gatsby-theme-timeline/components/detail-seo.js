@@ -1,7 +1,7 @@
 import React from "react"
-import SEO from "gatsby-theme-timeline/src/components/seo"
-
-export default ({ item, location, siteMetadata }) => {
+import Seo from "gatsby-theme-timeline/src/components/seo"
+import { getSrc } from "gatsby-plugin-image"
+const DetailSeo = ({ item, location, siteMetadata }) => {
   let lang = "en"
   if (location && location.pathname.startsWith("/zh/")) {
     lang = "zh"
@@ -11,7 +11,7 @@ export default ({ item, location, siteMetadata }) => {
   }
 
   return (
-    <SEO
+    <Seo
       siteMetadata={siteMetadata}
       lang={lang}
       title={item.title}
@@ -19,8 +19,10 @@ export default ({ item, location, siteMetadata }) => {
       location={location}
       imageSource={
         item.socialImage
-          ? item.socialImage?.childImageSharp?.fluid.src
-          : item.image?.childImageSharp?.fluid.src
+          ? getSrc(item.socialImage)
+          : item.image
+          ? getSrc(item.image)
+          : item.imageRemote
       }
       imageAlt={item.imageAlt}
       pageType="detail"
@@ -28,3 +30,4 @@ export default ({ item, location, siteMetadata }) => {
     />
   )
 }
+export default DetailSeo
