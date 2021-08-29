@@ -12,6 +12,7 @@ module.exports = {
     author: "Owen Young",
     description: "All my stories are here",
     keywords: ["Owen", "Owen Young", "Blog", "Story"],
+    iconUrl: "/icon.png",
     telegram: "@theowenyoung",
     menuLinks: [
       {
@@ -23,25 +24,7 @@ module.exports = {
         url: "/en",
       },
     ],
-    projects: [
-      {
-        name: "Actionsflow",
-        url: "https://github.com/actionsflow/actionsflow",
-        description:
-          "free IFTTT/Zapier alternative for developers based on Github Actions",
-      },
-      {
-        name: "Buzzing",
-        url: "https://www.buzzing.cc/",
-        description: "See hot discussions in your native language",
-      },
-      {
-        name: "Gatsby Theme Timeline",
-        url: "https://github.com/theowenyoung/gatsby-theme-timeline",
-        description:
-          "show your all posts, tweets, instagram posts etc into one blog",
-      },
-    ],
+
     categories: [
       {
         name: "Post",
@@ -59,15 +42,15 @@ module.exports = {
     social: [
       {
         name: "About",
-        url: "/about",
+        url: "https://wiki.owenyoung.com/about",
       },
       {
         name: "Now",
-        url: "/now",
+        url: "https://wiki.owenyoung.com/now",
       },
       {
         name: "Projects",
-        url: "/projects",
+        url: "https://wiki.owenyoung.com/projects",
       },
       {
         name: "Github @theowenyoung",

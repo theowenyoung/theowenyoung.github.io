@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Box, jsx, Styled, Link as LinkUI } from "theme-ui"
+import { Box, jsx, Themed, Link as LinkUI } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 const Categories = () => {
   const { site } = useStaticQuery(
@@ -19,8 +19,8 @@ const Categories = () => {
   const links = site.siteMetadata.categories
   return (
     <Box data-test="categories-container">
-      <Styled.h4 data-test="categories-title">Categories</Styled.h4>
-      <Styled.ul>
+      <Themed.h4 data-test="categories-title">Categories</Themed.h4>
+      <Themed.ul>
         {links
           ? links.map((link, i) => {
               const attr = {}
@@ -37,7 +37,7 @@ const Categories = () => {
               )
             })
           : null}
-      </Styled.ul>
+      </Themed.ul>
     </Box>
   )
 }

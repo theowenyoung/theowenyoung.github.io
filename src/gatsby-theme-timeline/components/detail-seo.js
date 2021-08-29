@@ -1,7 +1,7 @@
 import React from "react"
 import SEO from "gatsby-theme-timeline/src/components/seo"
 
-export default ({ item, location }) => {
+export default ({ item, location, siteMetadata }) => {
   let lang = "en"
   if (location && location.pathname.startsWith("/zh/")) {
     lang = "zh"
@@ -12,6 +12,7 @@ export default ({ item, location }) => {
 
   return (
     <SEO
+      siteMetadata={siteMetadata}
       lang={lang}
       title={item.title}
       description={item.excerpt}

@@ -7,10 +7,11 @@ import { Link } from "theme-ui"
 
 const BioContent = () => (
   <Fragment>
-    Words by <Link href="/about">Owen Young</Link>.
+    Words by <Link href="https://wiki.owenyoung.com/about/">Owen Young</Link>.
     <br />
     Freelancer / Perfectionism / Workflow lover, Personal Finance Enthusiast{" "}
-    <Link href="/now">What I’m doing now?</Link>
+    <Link href="https://wiki.owenyoung.com/">Wiki</Link>&nbsp;/&nbsp;
+    <Link href="https://wiki.owenyoung.com/now/">What I’m doing now?</Link>
   </Fragment>
 )
 

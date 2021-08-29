@@ -21,6 +21,7 @@ export default ({ pageContext, location, siteMetadata }) => {
   }
   return (
     <SEO
+      siteMetadata={siteMetadata}
       lang={lang}
       description={description}
       title={title}
