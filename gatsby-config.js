@@ -201,7 +201,7 @@ module.exports = {
                 .map(node => {
                   let html = node.body
                   if (node.__typename === "MdxBlogPost") {
-                    html = node.parent.html
+                    html = node.excerpt
                   }
                   return Object.assign(
                     {},
@@ -228,22 +228,6 @@ module.exports = {
                   body
                   tags
                   dateISO: date
-                  ... on MdxBlogPost {
-                    id
-                    parent {
-                      ... on Mdx {
-                        id
-                        html
-                        parent {
-                          ... on File {
-                            id
-                            name
-                            sourceInstanceName
-                          }
-                        }
-                      }
-                    }
-                  }
                   ... on SocialMediaPost {
                     id
                     parent {
