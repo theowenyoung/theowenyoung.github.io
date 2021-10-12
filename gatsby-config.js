@@ -95,6 +95,10 @@ module.exports = {
         url: "https://github.com/theowenyoung/theowenyoung.github.io",
       },
     ],
+    utterances: {
+      repo: "theowenyoung/story",
+      label: "comment",
+    },
   },
   plugins: [
     {
@@ -166,10 +170,6 @@ module.exports = {
         shouldTransformJson: false,
         tweetTypeName: ["EnTweetsJson", "ZhTweetsJson"],
         instagramTypeName: ["EnInstagramJson", "ZhInstagramJson"],
-        utterances: {
-          repo: "theowenyoung/story",
-          label: "comment",
-        },
       },
     },
     {
