@@ -44,7 +44,11 @@ const Detail = props => {
     item.__typename === POST_TYPE_NAME ||
     (props.pageContext && props.pageContext.pageType === "page")
   ) {
-    return <PostDetail {...props}></PostDetail>
+    return (
+      <div style={{ maxWidth: 750 }}>
+        <PostDetail {...props}></PostDetail>
+      </div>
+    )
   } else {
     return <DefaultDetail {...props}></DefaultDetail>
   }
