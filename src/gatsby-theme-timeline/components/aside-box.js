@@ -16,9 +16,9 @@ const Aside = ({ data, pageContext }) => {
     <Themed data-test="aside" as="aside">
       <Themed>
         <Bio basePath={basePath} siteMetadata={siteMetadata}></Bio>
-        <Tags basePath={basePath} group={group}></Tags>
         <Categories basePath={basePath}></Categories>
         <Links siteMetadata={siteMetadata} links={social}></Links>
+        <Tags basePath={basePath} group={group}></Tags>
       </Themed>
     </Themed>
   )
