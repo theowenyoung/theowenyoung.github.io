@@ -41,6 +41,10 @@ module.exports = {
     ],
     social: [
       {
+        name:"Newsletter",
+        url:"https://theowenyoung.substack.com"
+      },
+      {
         name: "About",
         url: "https://wiki.owenyoung.com/about",
       },
