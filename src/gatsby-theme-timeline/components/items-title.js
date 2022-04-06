@@ -30,13 +30,19 @@ const ItemsTitle = ({ pageContext }) => {
     return (
       <div>
         <Themed.blockquote>
-          This blog has been migrated to{" "}
-          <LinkUI href="https://www.owenyoung.com">www.owenyoung.com</LinkUI>,
-          please use the new address to visit the latest content.
+          This blog has been{" "}
+          <LinkUI href="https://www.owenyoung.com/blog/migrate-to-zola/">
+            migrate
+          </LinkUI>{" "}
+          to <LinkUI href="https://www.owenyoung.com">www.owenyoung.com</LinkUI>
+          , please use the new address to visit the latest content.
         </Themed.blockquote>
         <Themed.blockquote>
-          这个博客已经迁移到{" "}
-          <LinkUI href="https://www.owenyoung.com">www.owenyoung.com</LinkUI>
+          这个博客已经
+          <LinkUI href="https://www.owenyoung.com/blog/migrate-to-zola/">
+            迁移
+          </LinkUI>
+          到 <LinkUI href="https://www.owenyoung.com">www.owenyoung.com</LinkUI>
           了，请使用新的地址查看最新内容。
         </Themed.blockquote>
         <Themed.h4
