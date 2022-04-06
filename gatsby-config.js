@@ -46,15 +46,15 @@ module.exports = {
       },
       {
         name: "About",
-        url: "https://wiki.owenyoung.com/about",
+        url: "https://www.owenyoung.com/about",
       },
       {
         name: "Now",
-        url: "https://wiki.owenyoung.com/now",
+        url: "https://www.owenyoung.com/now",
       },
       {
         name: "Projects",
-        url: "https://wiki.owenyoung.com/projects",
+        url: "https://www.owenyoung.com/projects",
       },
       {
         name: "Github @theowenyoung",

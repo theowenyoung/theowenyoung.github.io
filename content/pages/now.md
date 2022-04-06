@@ -8,4 +8,4 @@ date: 2021-02-01
 ## Page has been moved
 
 
-**This now page has been moved to my wiki site <https://wiki.owenyoung.com/now/>, please use the new [link](https://wiki.owenyoung.com/now/)**
+**This now page has been moved to my wiki site <https://www.owenyoung.com/now/>, please use the new [link](https://www.owenyoung.com/now/)**
