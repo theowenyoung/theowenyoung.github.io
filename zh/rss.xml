@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Owen Young's Story]]></title><description><![CDATA[All my stories are here]]></description><link>https://blog.owenyoung.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 May 2022 07:06:09 GMT</lastBuildDate><item><title><![CDATA[RT @HackerNewsZh: Ask HN: 最近还有没有其他自学成才的开发者害怕面试？
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Owen Young's Story]]></title><description><![CDATA[All my stories are here]]></description><link>https://blog.owenyoung.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 May 2022 13:09:05 GMT</lastBuildDate><item><title><![CDATA[朋友们，Javascript 如何在同一行打印字符，而不是换行？
+
+for (let i=0;i&lt;2;i++){
+  console.log(i);
+}]]></title><link>https://blog.owenyoung.com/tweet/1525461708894253057</link><guid isPermaLink="false">https://blog.owenyoung.com/tweet/1525461708894253057</guid><pubDate>Sat, 14 May 2022 13:03:07 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[RT @HackerNewsZh: Ask HN: 最近还有没有其他自学成才的开发者害怕面试？
 
 Ask HN: Any other self taught devs terrified of interviewing these days?
 
